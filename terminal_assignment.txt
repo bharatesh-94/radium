@@ -1,0 +1,126 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+
+    Directory: C:\Users\Bharath\Desktop\terminal testing
+
+
+Mode                 LastWriteTime         Length Name                                                                                                               
+----                 -------------         ------ ----                                                                                                               
+d-----        02-11-2021     14:32                assignment
+
+
+PS C:\Users\Bharath\Desktop\terminal testing\assignment> mkdir source
+
+
+    Directory: C:\Users\Bharath\Desktop\terminal testing\assignment
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        02-11-2021     14:34                source
+
+
+
+    Directory: C:\Users\Bharath\Desktop\terminal testing\assignment
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        02-11-2021     14:34                destination
+
+
+
+
+    Directory: C:\Users\Bharath\Desktop\terminal testing
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        02-11-2021     14:34                assignment
+
+
+PS C:\Users\Bharath\Desktop\terminal testing> cd assignment
+
+    Directory: C:\Users\Bharath\Desktop\terminal testing\assignment
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        02-11-2021     14:34                destination
+d-----        02-11-2021     14:34                source
+
+
+PS C:\Users\Bharath\Desktop\terminal testing\assignment> cd source
+PS C:\Users\Bharath\Desktop\terminal testing\assignment\source> cat > testing.txt 
+
+PS C:\Users\Bharath\Desktop\terminal testing\assignment\source> cat testing.txt
+PS C:\Users\Bharath\Desktop\terminal testing\assignment\source> echo "this is the new line in this file" > testing.txt
+PS C:\Users\Bharath\Desktop\terminal testing\assignment\source> cat testing.txt
+PS C:\Users\Bharath\Desktop\terminal testing\assignment\source> cd..
+PS C:\Users\Bharath\Desktop\terminal testing\assignment> cp source/testing.txt destination
+PS C:\Users\Bharath\Desktop\terminal testing\assignment> cd destination 
+PS C:\Users\Bharath\Desktop\terminal testing\assignment\destination> ls
+
+
+    Directory: C:\Users\Bharath\Desktop\terminal testing\assignment\destination
+----                 -------------         ------ ----
+-a----        02-11-2021     14:55             72 testing.txt
+
+ 
+PS C:\Users\Bharath\Desktop\terminal testing\assignment\source> mv testing.txt  .\destination
+PS C:\Users\Bharath\Desktop\terminal testing\assignment\source> cd..
+
+
+    Directory: C:\Users\Bharath\Desktop\terminal testing\assignment
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+
+
+PS C:\Users\Bharath\Desktop\terminal testing\assignment> cd destination
+PS C:\Users\Bharath\Desktop\terminal testing\assignment\destination> ls
+PS C:\Users\Bharath\Desktop\terminal testing\assignment\destination> ls
+PS C:\Users\Bharath\Desktop\terminal testing\assignment\destination> cd..
+PS C:\Users\Bharath\Desktop\terminal testing\assignment> ls
+
+    Directory: C:\Users\Bharath\Desktop\terminal testing\assignment
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        02-11-2021     15:11                destination
+
+ 
+PS C:\Users\Bharath\Desktop\terminal testing\assignment\source> ls
+
+
+    Directory: C:\Users\Bharath\Desktop\terminal testing\assignment\source
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        02-11-2021     14:55             72 testing
+
+
+PS C:\Users\Bharath\Desktop\terminal testing\assignment> mv source/testing.txt destination
+PS C:\Users\Bharath\Desktop\terminal testing\assignment> cd source
+PS C:\Users\Bharath\Desktop\terminal testing\assignment\source> ls
+PS C:\Users\Bharath\Desktop\terminal testing\assignment> cd destination
+PS C:\Users\Bharath\Desktop\terminal testing\assignment\destination> ls
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        02-11-2021     15:52              0 testing.txt
+
+PS C:\Users\Bharath\Desktop\terminal testing\assignment\destination> echo "functionup is a bootcamp, functionup is a bootcamp, functionup is bootcamp" > testing.txt
+
+PS C:\Users\Bharath\Desktop\terminal testing\assignment\destination> cat testing.txt
+
+PS C:\Users\Bharath\Desktop\terminal testing\assignment\destination> Select-String -Pattern 'functionup'  testing.txt -AllMatches
+
+testing.txt:1:functionup is a bootcamp, functionup is a bootcamp, functionup is bootcamp
+ 
+PS C:\Users\Bharath\Desktop\terminal testing\assignment\destination> 
