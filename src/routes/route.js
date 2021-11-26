@@ -1,9 +1,9 @@
 const express = require('express');
 const router = express.Router();
 
-const cowinController= require("../controllers/cowinController")
+const cryptoController= require("../controllers/cryptoController")
 
-router.get("/weather", cowinController.getWeatherReport)
+router.get("/cryptodata", cryptoController.getCryptoData)
 // router.get("/cowin/states", cowinController.getStatesList)
 // router.get("/cowin/districts/:stateId", cowinController.getDistrictsList)
 // router.get("/cowin/centers", cowinController.getByPin)
